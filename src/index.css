@@ -83,3 +83,27 @@ header {
     }
   }
 }
+
+/* ===== Main Style ===== */
+/*hero section*/
+.hero-section {
+  background-color: var(--c-two);
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-text {
+    width: 400px;
+    text-align: center;
+
+    h1 {
+      font-size: 3.6rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
