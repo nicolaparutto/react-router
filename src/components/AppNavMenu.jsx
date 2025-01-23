@@ -1,19 +1,17 @@
 import { NavLink } from "react-router-dom"
+//Import array linksMenu:
+import navLinsk from "../data/navLinks"
 
 function AppNavMenu() {
    return (
       <div>
          <nav>
             <ul>
-               <li>
-                  <NavLink to="/">Home</NavLink>
-               </li>
-               <li>
-                  <NavLink to="/about">Chi Siamo</NavLink>
-               </li>
-               <li>
-                  <NavLink to="/posts">I Nostri Post</NavLink>
-               </li>
+               {navLinsk.map(navLink => (
+                  <li key={navLink.id}>
+                     <NavLink to={navLink.root}>{navLink.name}</NavLink>
+                  </li>
+               ))}
             </ul>
          </nav>
       </div>
