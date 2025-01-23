@@ -12,7 +12,7 @@ function AppNavMenu() {
             <ul>
                {navLinsk.map(navLink => (
                   <li key={navLink.id}>
-                     <NavLink to={navLink.root}>{navLink.name}</NavLink>
+                     <NavLink to={navLink.root} >{navLink.name}</NavLink>
                   </li>
                ))}
             </ul>
