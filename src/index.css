@@ -5,6 +5,81 @@
   box-sizing: border-box;
 }
 
+/* color palette */
+:root {
+  --c-one: #FBB195;
+  --c-two: #F67280;
+  --c-three: #C06C84;
+  --c-four: #6C5B7B;
+  --c-five: #355C7D;
+}
+
+/* default css */
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* utility */
 .active {
   color: green;
+}
+
+.debug {
+  border: 1px dashed red;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* ===== Header Style ===== */
+header {
+  background-color: var(--c-one);
+}
+
+/* navbar */
+.nav-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.nav-bar {
+  margin-left: 30px;
+
+  ul {
+    display: flex;
+
+    li {
+      margin: 0px 20px;
+      font-size: 1.1rem;
+
+      a {
+        color: #000;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

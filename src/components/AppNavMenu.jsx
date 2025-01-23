@@ -4,8 +4,11 @@ import navLinsk from "../data/navLinks"
 
 function AppNavMenu() {
    return (
-      <div>
-         <nav>
+      <div className="nav-container">
+         <div className="logo">
+            <NavLink to="/"><img src="img/logo.png" alt="" /></NavLink>
+         </div>
+         <nav className="nav-bar">
             <ul>
                {navLinsk.map(navLink => (
                   <li key={navLink.id}>
