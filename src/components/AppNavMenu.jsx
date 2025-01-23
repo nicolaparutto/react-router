@@ -6,7 +6,7 @@ function AppNavMenu() {
    return (
       <div className="nav-container">
          <div className="logo">
-            <NavLink to="/"><img src="img/logo.png" alt="" /></NavLink>
+            <NavLink to="/"><img src="img/logo.png" alt="logo" /></NavLink>
          </div>
          <nav className="nav-bar">
             <ul>

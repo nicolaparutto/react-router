@@ -9,7 +9,7 @@ function AboutPage() {
                   <p>Siamo un gruppo di appassionati di viaggi, uniti dal desiderio di condividere esperienze, idee e ispirazione. Questo blog nasce dalla nostra voglia di raccontare storie, esplorare nuovi orizzonti e costruire una comunità di persone curiose e appassionate come noi.</p>
                </div>
                <div className="banner-image">
-                  <img src="img/about-img.jpeg" alt="" />
+                  <img src="img/about-img.jpeg" alt="about-image" />
                </div>
             </div>
          </div>
