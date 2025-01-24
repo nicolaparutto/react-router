@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 function PostsDetailsPage() {
    const { id } = useParams();
@@ -28,6 +28,9 @@ function PostsDetailsPage() {
                <div className="post-text">
                   <h1>{postSelected.title}</h1>
                   <p>{postSelected.content}</p>
+                  <div className="btn-container">
+                     <Link to={"/posts"} className="btn">Indietro</Link >
+                  </div>
                </div>
             </div>
          </div>

@@ -42,6 +42,16 @@ a {
   max-width: 1200px;
 }
 
+.btn {
+  background-color: var(--c-two);
+  padding: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--c-three);
+  }
+}
+
 /* ===== Header Style ===== */
 header {
   background-color: var(--c-one);
@@ -122,16 +132,6 @@ header {
   span {
     font-size: 1.2rem;
   }
-
-  a {
-    background-color: var(--c-two);
-    padding: 10px;
-    border-radius: 5px;
-
-    &:hover {
-      background-color: var(--c-three);
-    }
-  }
 }
 
 /*postsDetails section*/
@@ -158,9 +158,18 @@ header {
     width: 50%;
     text-align: left;
     margin-left: 20px;
+    position: relative;
 
     h1 {
       margin-bottom: 10px;
+    }
+
+    .btn-container {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 20px;
+      right: 0;
+      margin-right: 10px;
     }
   }
 }

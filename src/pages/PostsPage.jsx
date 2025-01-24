@@ -28,7 +28,7 @@ function PostsPage() {
                {postsData.map(post => (
                   <li key={post.id}>
                      <span>{post.title}</span>
-                     <Link to={`/dettaglio-post/${post.id}`}>Vedi dettagli</Link>
+                     <Link className="btn" to={`/dettaglio-post/${post.id}`}>Vedi dettagli</Link>
                   </li>
                ))}
             </ul>
