@@ -1,19 +1,30 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate, Navigate } from "react-router-dom";
 
 function PostsDetailsPage() {
    const { id } = useParams();
    const [postSelected, setPostSelected] = useState({})
    const endpointApi = "http://localhost:3000";
+   const navigate = useNavigate()
 
-
+   //Chiamata per ricevere i dati del singolo post:
    const fetchPost = () => {
       axios.get(`${endpointApi}/posts/${id}`)
          .then(res => {
             setPostSelected(res.data)
          })
    }
+   //Gestione di elliminazione di un post:
+   function handlerRemove() {
+      axios.delete(`${endpointApi}/posts/${id}`)
+         .then(res => {
+            alert("Il post è stato eliminato con successo!");
+            //ritorno all'elenco dei post
+            navigate("/posts")
+         })
+   }
+
 
    useEffect(() => {
       fetchPost()
@@ -29,8 +40,9 @@ function PostsDetailsPage() {
                   <h1>{postSelected.title}</h1>
                   <p>{postSelected.content}</p>
                   <div className="btn-container">
-                     <Link to={"/posts"} className="btn">Indietro</Link >
+                     <Link to={"/posts"} className="btn">Torna alla lista</Link >
                   </div>
+                  <button onClick={handlerRemove} className="btn-delete">Elimina Post</button>
                </div>
             </div>
          </div>

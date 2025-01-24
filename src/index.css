@@ -52,6 +52,20 @@ a {
   }
 }
 
+.btn-delete {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(180, 0, 0);
+  }
+}
+
 /* ===== Header Style ===== */
 header {
   background-color: var(--c-one);
@@ -161,7 +175,7 @@ header {
     position: relative;
 
     h1 {
-      margin-bottom: 10px;
+      margin: 10px 0px;
     }
 
     .btn-container {
@@ -170,6 +184,10 @@ header {
       margin-bottom: 20px;
       right: 0;
       margin-right: 10px;
+    }
+
+    button {
+      margin-top: 10px;
     }
   }
 }
