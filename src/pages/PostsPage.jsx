@@ -23,22 +23,32 @@ function PostsPage() {
    return (
       <section className="container">
          <div className="posts-container">
-            {postsData.map(post => (
-               <div className="post" key={post.id}>
-                  <div className="post-content">
-                     <div className="post-image">
-                        <img src={post.image} alt="" />
-                     </div>
-                     <div className="post-text">
-                        <h1>{post.title}</h1>
-                        <p>{post.content}</p>
-                     </div>
-                  </div>
-               </div>
-            ))}
+            <ul>
+               {postsData.map(post => (
+                  <li key={post.id}>
+                     <span>{post.title}</span>
+                     <Link>Vedi dettagli</Link>
+                  </li>
+               ))}
+            </ul>
          </div>
       </section>
    )
 }
 
 export default PostsPage
+
+
+/*
+<div className="post" key={post.id}>
+   <div className="post-content">
+      <div className="post-image">
+         <img src={post.image} alt="" />
+      </div>
+      <div className="post-text">
+         <h1>{post.title}</h1>
+         <p>{post.content}</p>
+      </div>
+   </div>
+</div>
+*/
