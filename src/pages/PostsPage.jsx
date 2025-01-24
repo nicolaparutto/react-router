@@ -21,6 +21,7 @@ function PostsPage() {
    useEffect(() => {
       fetchPosts()
    }, [])
+
    return (
       <section className="container">
          <div className="posts-container">

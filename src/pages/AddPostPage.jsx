@@ -21,7 +21,6 @@ function AddPostPage() {
          ...prevPostData,
          [e.target.name]: e.target.value
       }))
-      console.log(postData)
    }
 
    const handlerSendPost = (e) => {
@@ -33,6 +32,7 @@ function AddPostPage() {
          ...postData,
          tags: tagsConversion
       }
+
       //Effetto la chiamata all'API con il metodo post, e gli passo il nuovo oggetto:
       axios.post(`${endpointApi}/posts`, updatedPost)
          .then(res => {

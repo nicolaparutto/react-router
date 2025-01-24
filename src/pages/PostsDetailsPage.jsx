@@ -15,6 +15,7 @@ function PostsDetailsPage() {
             setPostSelected(res.data)
          })
    }
+
    //Gestione di elliminazione di un post:
    function handlerRemove() {
       axios.delete(`${endpointApi}/posts/${id}`)
@@ -25,10 +26,10 @@ function PostsDetailsPage() {
          })
    }
 
-
    useEffect(() => {
       fetchPost()
    }, [])
+
    return (
       <section className="container">
          <div className="postDetails-container" key={postSelected.id}>
