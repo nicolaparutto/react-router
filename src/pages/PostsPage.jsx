@@ -9,6 +9,7 @@ function PostsPage() {
    const endpointApi = "http://localhost:3000";
 
    const [postsData, setPostsData] = useState([])
+
    //Chiamata Api per dati dei post:
    const fetchPosts = () => {
       axios.get(`${endpointApi}/posts`)
@@ -27,7 +28,7 @@ function PostsPage() {
                {postsData.map(post => (
                   <li key={post.id}>
                      <span>{post.title}</span>
-                     <Link>Vedi dettagli</Link>
+                     <Link to={`/dettaglio-post/${post.id}`}>Vedi dettagli</Link>
                   </li>
                ))}
             </ul>
