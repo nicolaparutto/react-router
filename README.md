@@ -11,3 +11,18 @@ React Blog Pages
 - Gestire la classe active.
 - Stampare il menu dinamicamente.
 - E altro...
+
+<hr>
+
+React Blog Pages (2)
+===
+## Consegna:
+- Completare il nostro routing con l'aggiunta delle pagine di dettaglio.
+- Aggiungere i link alla lista dei post.
+- Fare quindi in modo di raggiungere la pagina di dettaglio del singolo post.
+
+### Bonus:
+- Nella pagina di dettaglio implementare:
+  - Una navigazione che consenta di andare al post precedente e a quello sucessivo.
+  - La possibilità di elliminare un post dalla pagina di dettaglio con reindirizzamento alla pagina elenco.
+  - Una pagina di aggiunta di un nuovo post (tramite un form) con reindirizzamento alla pagina di elenco, una volta creato.
