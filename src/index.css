@@ -148,6 +148,18 @@ header {
   }
 }
 
+.add-post {
+  display: block;
+  margin: 10px;
+  text-align: center;
+  background-color: var(--c-one);
+  padding: 10px 25px;
+
+  &:hover {
+    background-color: #ec906e;
+  }
+}
+
 /*postsDetails section*/
 .postDetails-container {
   text-align: center;

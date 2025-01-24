@@ -32,6 +32,9 @@ function PostsPage() {
                   </li>
                ))}
             </ul>
+
+            <Link className="add-post" to={"/aggiungi-post"}>AGGIUNGI UN POST</Link>
+
          </div>
       </section>
    )
