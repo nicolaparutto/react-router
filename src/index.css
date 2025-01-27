@@ -109,7 +109,7 @@ header {
 /* ===== Main Style ===== */
 /*hero section*/
 .hero-section {
-  background-color: var(--c-two);
+  background-color: var(--c-three);
   min-height: 400px;
   display: flex;
   align-items: center;

@@ -7,7 +7,6 @@ function PostsDetailsPage() {
    const [postSelected, setPostSelected] = useState({})
    const endpointApi = "http://localhost:3000";
    const navigate = useNavigate()
-
    //Chiamata per ricevere i dati del singolo post:
    const fetchPost = () => {
       axios.get(`${endpointApi}/posts/${id}`)
@@ -40,6 +39,7 @@ function PostsDetailsPage() {
                <div className="post-text">
                   <h1>{postSelected.title}</h1>
                   <p>{postSelected.content}</p>
+                  <p>{postSelected.tags ? postSelected.tags.join(', ') : "tags non trovati"}</p>
                   <div className="btn-container">
                      <Link to={"/posts"} className="btn">Torna alla lista</Link >
                   </div>
