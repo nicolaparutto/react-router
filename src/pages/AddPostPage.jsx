@@ -26,7 +26,7 @@ function AddPostPage() {
    const handlerSendPost = (e) => {
       e.preventDefault()
       //conversione della stringa dei tag, in un array:
-      const tagsConversion = postData.tags.split(",").map(tag => tag.charAt(0).toUpperCase().trim());
+      const tagsConversion = postData.tags.split(",").map(tag => tag.trim());
       //console.log(postData.tags.split(",").map(tag => tag.trim().charAt(0).toUpperCase()))
       const updatedPost = {
          ...postData,
